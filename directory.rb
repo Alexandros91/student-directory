@@ -12,6 +12,7 @@ puts "The Joker"
 puts "Joffrey Baratheon"
 puts "Norman Bates"
 
+#Here we add the total number of the students. 
 print "Overall, we have "
 print 11
 print " great students."
