@@ -1,4 +1,4 @@
-# First we print the list of students.
+# We put all the students into an array.
 students = [
   "Dr. Hannibal Lecter",
   "Darth Vader",
@@ -12,11 +12,23 @@ students = [
   "Joffrey Baratheon",
   "Norman Bates"
   ]
-# and then we print them.
-puts "The students pf Villains Academy"
-puts "--------------"
-students.each do |student|
-    puts student
+  
+def print_header
+  puts "The students pf Villains Academy"
+  puts "--------------"
 end
-# Finally, we print the total number of the students. 
-puts "Overall, we have #{students.count} great students."
+
+def print(names)
+  names.each do |name|
+    puts name
+  end
+end
+
+def print_footer(names)
+  puts "Overall, we have #{names.count} great students."
+end
+
+# We now have to call the methods.
+print_header
+print(students)
+print_footer(students)
